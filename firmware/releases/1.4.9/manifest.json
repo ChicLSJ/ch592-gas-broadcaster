@@ -1,0 +1,10 @@
+{
+  "version": "1.4.9",
+  "file": "ch592_ota.bin",
+  "size": 158572,
+  "crc32": "0xEF7137AE",
+  "sha256": "d68f64b0256434c0360585875392a0d89057ce6adca1a7bc9ae99a1f4b436843",
+  "built": "2026-11-21T11:43:25+00:00",
+  "notes": "1.4.9：推荐配合 HA 0.6.13，版本实体显示为“固件”，保留自定义名称。点击更新后先下载并校验，再自动唤醒 OTA、上传、批量校验和重启确认；修复旧集成唤醒后等待和校验过慢的问题。保留免 B 写值与原每分钟约300ms广播节奏。仅公开 OTA 镜像，完整恢复包仅本地。",
+  "notes_en": "1.4.9: use HA 0.6.13 for automatic wake, upload, batched full-byte verification and reboot confirmation after download integrity checks. Fixes old integration wake waits and slow verification. Keeps the Firmware label, explicit-click configuration writes and original 300 ms/minute advertising. OTA images only; full recovery images stay local."
+}

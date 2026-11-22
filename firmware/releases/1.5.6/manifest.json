@@ -1,0 +1,10 @@
+{
+  "version": "1.5.6",
+  "file": "ch592_ota.bin",
+  "size": 159516,
+  "crc32": "0xFF0B59E2",
+  "sha256": "0e65581f06839314d913b69a587fdda71786a5262b5491f81c6b173eaec5aa75",
+  "built": "2026-11-22T00:00:32+00:00",
+  "notes": "1.5.6 / HA0.6.21：HA唤醒时如蓝牙代理暂无本设备可连接路径，改为等待下一条广播再试，不再每0.2秒空转；单轮等待由180秒改为240秒；状态传感器临时增加唤醒诊断，查明问题后移除。固件仅更新版本号，计量、光照、采样、休眠、电量及约每分钟300毫秒普通广播不变，完整镜像写入和CRC校验不变。双构建一致、固件故障测试和88项HA测试通过；实体OTA待验证。仅公开OTA镜像，完整烧录包仅本地。",
+  "notes_en": "1.5.6 / HA0.6.21: when no Bluetooth proxy currently has a connectable path to the meter, HA now waits for the next advertisement instead of retrying every 0.2 s; one wake round may last 240 s instead of 180 s; temporary wake diagnostics are added to the status sensor and will be removed once the issue is understood. Firmware changes only its version; metering, optics, sampling, sleep, battery, normal 300 ms/minute advertising, complete image writes and CRC are unchanged. Matching builds, firmware fault tests and 88 HA tests pass; physical OTA pending. OTA images only; full recovery remains local."
+}

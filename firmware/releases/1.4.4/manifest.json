@@ -1,0 +1,10 @@
+{
+  "version": "1.4.4",
+  "file": "ch592_ota.bin",
+  "size": 157568,
+  "crc32": "0x7672D448",
+  "sha256": "5fd2a70252067d81c92cc8d31a55846ee3a5d197ce193e617161056126107e46",
+  "built": "2026-11-21T03:48:44+00:00",
+  "notes": "1.4.4：恢复 8 月 22 日电量与采样逻辑、nRF Connect 写值；B 约 5 秒写值，约 10 秒 OTA；松开后无操作 5 秒退出。已通过编译及主机逻辑测试，待实机验证。",
+  "notes_en": "1.4.4: original battery/sampling and nRF Connect setting retained; B ~5s settings, ~10s OTA; exit after 5s idle following release. Built and host-tested; hardware validation pending."
+}

@@ -1,0 +1,10 @@
+{
+  "version": "1.4.6",
+  "file": "ch592_ota.bin",
+  "size": 157592,
+  "crc32": "0x42B6C372",
+  "sha256": "be332d028a2475258a3a4f0a8c91377b65de62baff0340c54c20777ad8965579",
+  "built": "2026-11-21T08:21:52+00:00",
+  "notes": "1.4.6：修复 BTHome 固件版本广播与统一版本宏不一致；保留计量、电量、手机写值、单 B 按键和 OTA 逻辑。仅发布 OTA 应用镜像，首次烧录/恢复完整包仅保留本地。",
+  "notes_en": "1.4.6: fix the BTHome firmware-version advertisement to use the unified version definition; preserve metering, battery, phone settings, single-B-button behavior and OTA flow. Only the OTA application image is published; complete first-flash/recovery packages remain local."
+}

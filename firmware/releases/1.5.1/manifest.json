@@ -1,0 +1,10 @@
+{
+  "version": "1.5.1",
+  "file": "ch592_ota.bin",
+  "size": 159328,
+  "crc32": "0x70994A63",
+  "sha256": "2ce9dd981e3d6607212818eb21d010a32e639844722787723d75cb1b41056788",
+  "built": "2026-11-21T13:54:46+00:00",
+  "notes": "1.5.1：配合HA0.6.16，新增分段异步完整镜像CRC，避免阻塞蓝牙；升级结束确认后延迟重启，让ATT先完成响应。HA在模式切换前清理服务缓存。保留完整FF写入、原计量/电量算法、采样、按键、写值和广播节奏。快速校验需设备已运行1.5.1，本次从1.5.0升级仍走兼容校验。仅OTA镜像公开，完整恢复包仅本地。",
+  "notes_en": "1.5.1 with HA0.6.16 adds bounded asynchronous whole-image CRC and acknowledges END before scheduled reboot. HA invalidates OTA service caches before mode changes. Retains complete FF programming, metering/battery algorithms, sampling, keys, writes and radio timing. Fast CRC requires installed firmware 1.5.1; upgrading from 1.5.0 uses legacy verification. OTA images only; recovery files stay local."
+}

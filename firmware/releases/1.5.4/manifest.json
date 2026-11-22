@@ -1,0 +1,10 @@
+{
+  "version": "1.5.4",
+  "file": "ch592_ota.bin",
+  "size": 159516,
+  "crc32": "0x3F2AC55B",
+  "sha256": "775e6c78da6761fee4dc3728173faa2aba02a0b9b7bdae2dcc3cf304909306b9",
+  "built": "2026-11-21T15:36:15+00:00",
+  "notes": "1.5.4：用于已线刷1.5.3后的OTA通道验证，应用仅更新版本号；保留1.5.3完整校验门槛及启动标志检查。配套HA0.6.19修复成功后旧连接提示和唤醒错误残留，包含实际GATT读取超时修复。计量、光照、电量、采样、休眠及普通广播策略不变；普通轮询不连接、不升级。双构建、固件故障测试和79项HA回归通过，1.5.3→1.5.4实体OTA已成功：总181.0秒；等待唤醒129.163秒（7次尝试）、连接4.330秒、擦除1.209秒、上传39.716秒、完整CRC1.433秒、END0.140秒、重启确认5.004秒。HA确认1.5.4、100%、OTA关闭，燃气保留22.51m³；下一分钟普通广播恢复，成功后旧连接提示和唤醒错误已清除。本次仍有连接重试，主要耗时在等待唤醒；未改变日常耗电策略，未测实际电流或电池寿命。完整烧录包仅本地，云端只公开OTA应用镜像。",
+  "notes_en": "1.5.4 validates OTA after the local wired 1.5.3 update. Only the application version changes; full verification gates and boot-flag checks remain. HA0.6.19 clears stale connection messages and wake errors on success and includes real GATT read deadlines. Metering, optical processing, battery, sampling, sleep and normal radio policies stay unchanged. Matching builds, firmware fault tests and 79 HA regressions pass; Physical 1.5.3→1.5.4 OTA succeeded in 181.0 s: wake wait 129.163 s (7 attempts), connection 4.330 s, erase 1.209 s, upload 39.716 s, whole-image CRC 1.433 s, END 0.140 s and reboot confirmation 5.004 s. HA confirmed 1.5.4, 100%, OTA off and the preserved 22.51 m³ reading. Normal advertising resumed the following minute; stale connection messages and wake errors cleared on success. Connection retries remain the main delay. Daily power policy is unchanged; current and battery lifetime were not measured. Publish OTA application images only; full wired recovery stays local."
+}

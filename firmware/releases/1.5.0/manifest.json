@@ -1,0 +1,10 @@
+{
+  "version": "1.5.0",
+  "file": "ch592_ota.bin",
+  "size": 158636,
+  "crc32": "0xD0843217",
+  "sha256": "b05b7e1fab55f3654b9ed152342c14f7ecbaf155d2741db168d30a9a3b2139ce",
+  "built": "2026-11-21T13:00:28+00:00",
+  "notes": "1.5.0：请配合HA集成0.6.15或更新版本，修复首次点击进度显示并恢复完整镜像写入与校验。0.6.14跳过填充区在实体校验中失败，请勿使用。升级或退出OTA后约1秒开始回报版本；普通上电与每分钟约300ms广播节奏不变。禁用阻塞蓝牙的整包CRC，保留单B分时、手机写值与免按键写值。云端仅OTA，完整恢复包仅本地。",
+  "notes_en": "1.5.0: use HA integration 0.6.15 or newer for first-click progress and complete image programming and verification. Do not use 0.6.14: skipped padding failed physical verification. Announce the version about one second after OTA exit; preserve ordinary startup and 300 ms/minute timing. Disable blocking whole-image CRC and retain single-B timing and explicit-click writes. OTA files only; recovery images stay local."
+}

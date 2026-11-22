@@ -1,0 +1,10 @@
+{
+  "version": "1.5.2",
+  "file": "ch592_ota.bin",
+  "size": 159348,
+  "crc32": "0x8874B94E",
+  "sha256": "5249a4b86b98d6fb7b89131507c62b27dcd56ee2bf398f9864e50d2d8960f63f",
+  "built": "2026-11-21T14:20:47+00:00",
+  "notes": "1.5.2：修复OTA连接临近入口期限建立后首条命令时间不足的问题；新连接重新计5秒无通信退出，重复连接状态不续期，总期限保留。配套HA0.6.17修复分片降档前重新检查OTA入口；固件/计数分别显示芯片/计数器图标，保留自定义图标。沿用1.5.1异步完整CRC、完整FF写入、原计量/电量算法、采样、按键、写值和广播节奏。1.5.1快速CRC已实体成功；1.5.2双构建、回归和实体升级通过；本次总63.7秒、完整CRC1.499秒、无连接重试，新固件连接计时需下次升级再观察。仅OTA公开，完整恢复包仅本地。",
+  "notes_en": "1.5.2 resets the five-second idle timer on a newly established OTA link so late connections have time for discovery and the first command. Repeated state events do not extend idle time; the total session limit remains. HA0.6.17 re-checks entry before chunk fallback and gives firmware/counter distinct icons while preserving custom icons. Retains asynchronous whole-image CRC, full FF writes, metering, battery curves, sampling, keys, writes and normal radio timing. 1.5.1 fast CRC passed physical testing; 1.5.2 matching builds, regressions and physical OTA passed: total63.7 s, CRC1.499 s, no connection retries. Observe the new idle timing on future updates. OTA images only; recovery stays local."
+}
